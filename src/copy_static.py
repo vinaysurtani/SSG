@@ -4,7 +4,7 @@ import shutil
 
 def copy_static():
     src_path = '/mnt/c/Users/VINAY/OneDrive/Desktop/boot_dev/workspace/github.com/vinaysurtani/SSG/static/'
-    desti_path = '/mnt/c/Users/VINAY/OneDrive/Desktop/boot_dev/workspace/github.com/vinaysurtani/SSG/public/' # via WSL console
+    desti_path = '/mnt/c/Users/VINAY/OneDrive/Desktop/boot_dev/workspace/github.com/vinaysurtani/SSG/docs/' # via WSL console
     val = os.path.exists(desti_path)
     if os.path.exists(desti_path):
         print(os.listdir(desti_path))
