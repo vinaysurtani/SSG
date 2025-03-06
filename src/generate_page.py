@@ -35,8 +35,8 @@ def generate_pages_recursive(dir_path_content, template_path, dest_dir_path, bas
             #print(new_dir_path)
                 html_file = new_dest_dir_path.replace('.md', '.html')
                 generate_page(new_dir_path, template_path, html_file, basepath)
-            # else:
-            #     shutil.copy(new_dir_path, new_dest_dir_path)
+            else:
+                shutil.copy(new_dir_path, new_dest_dir_path)
 
 
 # generate_pages_recursive('/mnt/c/Users/VINAY/OneDrive/Desktop/boot_dev/workspace/github.com/vinaysurtani/SSG/content/', '/mnt/c/Users/VINAY/OneDrive/Desktop/boot_dev/workspace/github.com/vinaysurtani/SSG/template.html', '/mnt/c/Users/VINAY/OneDrive/Desktop/boot_dev/workspace/github.com/vinaysurtani/SSG/public/')
